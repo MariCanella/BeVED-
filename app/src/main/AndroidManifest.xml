@@ -12,6 +12,17 @@
         android:theme="@style/Theme.BeVED"
         tools:targetApi="31">
         <activity
+            android:name=".PaginaInicialEstudante"
+            android:exported="false"
+            android:label="@string/title_activity_pagina_inicial_estudante"
+            android:theme="@style/Theme.BeVED.NoActionBar" />
+        <activity
+            android:name=".CadastroEstudante"
+            android:exported="false" />
+        <activity
+            android:name=".CadastroEmpresa"
+            android:exported="false" />
+        <activity
             android:name=".LoginEmpresa"
             android:exported="false" />
         <activity
