@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".PaginaInicialEstudante">
+    tools:context=".PaginaInicialEmpresa">
 
 
     <ImageView
@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="46dp"
         android:src="@drawable/hamburguer"
-        app:layout_constraintTop_toTopOf="@+id/linearLayout3"
+        app:layout_constraintTop_toTopOf="parent"
         tools:layout_editor_absoluteX="0dp" />
 
     <TextView
@@ -29,21 +29,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
-    <TextView
-        android:id="@+id/textView8"
-        android:layout_width="324dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="8dp"
-        android:gravity="center"
-        android:text="Estamos aqui para te desenvolver profissionalmente e te alocar no mercado de trabalho, e o melhor: de forma gratuita"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.505"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView7" />
-
     <LinearLayout
-        android:id="@+id/linearLayout3"
+        android:id="@+id/linearLayout2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
@@ -52,11 +39,11 @@
 
     <TextView
         android:id="@+id/textView9"
-        android:layout_width="233dp"
+        android:layout_width="228dp"
         android:layout_height="29dp"
         android:layout_gravity="center"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="92dp"
+        android:layout_marginTop="144dp"
         android:gravity="center"
         android:text="Qual o nosso propósito?"
         android:textAppearance="@android:style/TextAppearance.Material.Headline"
@@ -67,28 +54,29 @@
 
     <TextView
         android:id="@+id/textView6"
-        android:layout_width="330dp"
-        android:layout_height="83dp"
+        android:layout_width="338dp"
+        android:layout_height="139dp"
         android:layout_marginStart="32dp"
         android:layout_marginTop="12dp"
         android:layout_marginEnd="32dp"
-        android:text="Sabemos que na área de programação, vagas são o que não faltam, por isso, unimos o útil ao agradável. Temos empresas parceiras focadas em tecnologia que verificam seu desempenho e currículo, assim você pode conseguir um bom emprego na área mais moderna do Brasil e do mundo :)"
+        android:text="Sabemos que a área de programação está em uma grande expansão, por isso, juntando o útil ao agradável, decidimos criar cursos profissionalizantes gratuitos para pessoas que não tem condições de se formar, aqui você encontrará alguns dashs sobre os melhores de seus futuros candidatos "
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintHorizontal_bias="0.444"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+        app:layout_constraintTop_toBottomOf="@+id/textView9"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
-        android:layout_width="176dp"
+        android:id="@+id/button"
+        android:layout_width="0dp"
         android:layout_height="60dp"
         android:layout_marginHorizontal="20dp"
-        android:layout_marginStart="20dp"
         android:layout_marginTop="7dp"
-        android:layout_marginEnd="24dp"
         android:layout_weight="1"
-        android:text="Encontrar Cursos"
-        app:layout_constraintEnd_toStartOf="@+id/button2"
-        app:layout_constraintHorizontal_bias="0.363"
+        android:text="Encontrar nossos melhores candidatos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
@@ -97,22 +85,20 @@
         android:layout_width="0dp"
         android:layout_height="60dp"
         android:layout_marginHorizontal="20dp"
-        android:layout_marginTop="7dp"
-        android:layout_marginEnd="20dp"
+        android:layout_marginTop="8dp"
         android:layout_weight="1"
-        android:text="Encontrar Vagas"
+        android:text="Criar Vagas"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
 
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="match_parent"
         android:layout_height="270dp"
-        android:layout_marginTop="3dp"
         android:scaleType="fitCenter"
         android:src="@drawable/programador_nossoscursos"
-        app:layout_constraintTop_toBottomOf="@+id/textView8"
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
         tools:layout_editor_absoluteX="0dp" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

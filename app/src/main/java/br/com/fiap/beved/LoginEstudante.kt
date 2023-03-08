@@ -4,6 +4,7 @@ import android.annotation.SuppressLint
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
 import android.widget.TextView
 
 class LoginEstudante : AppCompatActivity() {
@@ -18,6 +19,13 @@ class LoginEstudante : AppCompatActivity() {
         chamaCadastro.setOnClickListener{
             val signUp = Intent(this, CadastroEstudante::class.java)
             startActivity(signUp)
+        }
+
+        val chamaPagInicial = findViewById<Button>(R.id.buttonLogin)
+
+        chamaPagInicial.setOnClickListener{
+            val signIn = Intent(this, PaginaInicialEstudante::class.java)
+            startActivity(signIn)
         }
     }
 }
