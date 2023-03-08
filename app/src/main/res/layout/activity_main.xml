@@ -65,6 +65,8 @@
             android:layout_margin="24dp"
             android:layout_weight="1"
             android:text="Quero estudar"
+            app:layout_constraintHorizontal_bias="1.6"
+            app:layout_constraintVertical_bias="1.6"
             tools:ignore="MissingConstraints" />
 
         <Button
@@ -74,7 +76,8 @@
             android:layout_margin="24dp"
             android:layout_weight="1"
             android:text="Quero contratar"
-            tools:ignore="MissingConstraints" />
+            tools:ignore="MissingConstraints"
+            />
 
     </LinearLayout>
 
